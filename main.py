@@ -1,4 +1,9 @@
 # main script
+#TODO: allow reset for each semester
+#TODO: perplexity API to search for speaker and return short bio, website link, and paper link
+#TODO: clean the tables (allow for varying format)
+
+
 # set up
 from utils.scrap import scrap_google
 
@@ -15,3 +20,6 @@ BQSE_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1Ic
 BQSE = scrap_google(BQSE_url)
 print(BQSE.head())
 print(BQSE.columns)
+
+# Econ history:
+# table element: everything under #parent-fieldname-text > div > table
