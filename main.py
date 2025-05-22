@@ -12,9 +12,9 @@ import pandas as pd
 
 #region inputs
 project_root = '/Users/fan/Dropbox/projects/programming/scrap-seminar'
-
-
-
+new_sem = False # only call set to True once before the semester starts
+sem = '2024SoSe' # set the semester to the current semester
+seminar_list = [] # store seminare objects you want to get updates from!
 
 # Set the working directory to the project root (or any absolute path)
 os.chdir(project_root)
@@ -23,26 +23,20 @@ os.chdir(project_root)
 folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
 
+# update semester
+def update_semester(s, semester):
+    '''
+    this function updates the semester of the seminar object
+    '''
+    s.semester = semester
+    
+    return s
 
-#region url
-# collect url and locator from all websites
-# manually update url and locator if the website changes/add new website
-BAMS_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793"
-BAMS = scrap_google(BAMS_url)
-
-print(BAMS.head())
-print(BAMS.columns)
-
-BQSE_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617"
-BQSE = scrap_google(BQSE_url)
-print(BQSE.head())
-print(BQSE.columns)
-
-# Econ history:
-# table element: everything under #parent-fieldname-text > div > table
-
-# rockwool
-
+if new_sem:
+    # update the semester for each seminar object
+    for s in seminar_list:
+        s = update_semester(s, '2023 Fall')
+        print(f"Updated {s.name} semester to {s.semester}")
 
 #region main function
 def main(s):
@@ -65,9 +59,23 @@ def main(s):
     
     # if the new data differs from the local data, save the new data to a local file
     # save the scraped data to a local file using the name provided
-    file_path = os.path.join(folder_path, f"{s.name}.csv")
-    df_new.to_csv(file_path, index=False)
-    print(f"Saved {s.name} data to {s.path}")
+    # file_path = os.path.join(folder_path, f"{s.name}.csv")
+    # df_new.to_csv(file_path, index=False)
+    # print(f"Saved {s.name} data to {s.path}")
 
     
-    return None
+    return diff
+
+
+
+# initialize
+# when using this tool for the first time, run this function first
+def init(s):
+    scrap_google(s.url)
+    
+    # save the scraped data to a local file using the name provided
+    file_path = os.path.join(folder_path, f"{s.name}.csv")
+    s.df.to_csv(file_path, index=False)
+    print(f"Saved {s.name} data to {s.path}")
+    
+    return s.df
