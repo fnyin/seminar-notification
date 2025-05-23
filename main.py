@@ -4,18 +4,23 @@
 #TODO: clean the tables (allow for varying format)
 
 
-#region set up
 from utils.scrap import *
 from utils.seminar_class import seminar
+from utils.process import *
+from utils.info import *
 import os
 import pandas as pd
+from ics import Calendar, Event
 
 #region inputs
 project_root = '/Users/fan/Dropbox/projects/programming/scrap-seminar'
-new_sem = False # only call set to True once before the semester starts
-sem = '2024SoSe' # set the semester to the current semester
-seminar_list = [] # store seminare objects you want to get updates from!
+new_sem = True # only call set to True once before the semester starts
+sem = "2025SoSe" # set the semester to the current semester
+seminar_list = [BAMS, BQSE] # store seminare you want to get updates from!
 
+
+#region set up
+## paths
 # Set the working directory to the project root (or any absolute path)
 os.chdir(project_root)
 
@@ -23,8 +28,26 @@ os.chdir(project_root)
 folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
 
-# update semester
-def update_semester(s, semester):
+# create a folder for the semester
+folder_path = os.path.join(folder_path, sem)
+os.makedirs(folder_path, exist_ok=True)
+
+
+# if we are in a new semester, we need to create a new folder
+if new_sem:
+    
+    # enumerate through the seminar list and scrap each seminar
+    for s in seminar_list:
+        # scrap the seminar website
+        df = scrap_google(s.url)
+        
+        # save the scraped data to a local file using the name provided
+        file_path = os.path.join(folder_path, f"{s.name}.csv")
+        df.to_csv(file_path, index=False)
+        print(f"Saved {s.name} data to {s.path}")
+
+# update semester for each seminar
+def set_sem(s, semester):
     '''
     this function updates the semester of the seminar object
     '''
@@ -32,13 +55,12 @@ def update_semester(s, semester):
     
     return s
 
-if new_sem:
-    # update the semester for each seminar object
-    for s in seminar_list:
-        s = update_semester(s, '2023 Fall')
-        print(f"Updated {s.name} semester to {s.semester}")
+# update the semester for each seminar object
+for s in seminar_list:
+    s = set_sem(s, '2023 Fall')
 
-#region main function
+
+#region main
 def main(s):
     '''
     s for class seminar
@@ -65,17 +87,3 @@ def main(s):
 
     
     return diff
-
-
-
-# initialize
-# when using this tool for the first time, run this function first
-def init(s):
-    scrap_google(s.url)
-    
-    # save the scraped data to a local file using the name provided
-    file_path = os.path.join(folder_path, f"{s.name}.csv")
-    s.df.to_csv(file_path, index=False)
-    print(f"Saved {s.name} data to {s.path}")
-    
-    return s.df

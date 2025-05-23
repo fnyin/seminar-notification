@@ -1,3 +1,9 @@
 This tool has to be maintained regualrly and is extremely sensitive to the seminar webpage changes, e.g. they change the url, table layout, etc.
 
 Also, this scrapper is not very good at updating locations and changes of the seminar. It is better to check the seminar webpage for the latest information after accepting the invitation on your calendar. The tool is mostly designed to avoid checking the seminar webpage all the time and it automates the process of adding the seminar to your calendar, which is kind of nice.
+
+no need to open this script and run it mamually, unless you need to update the seminar info or list.
+for mac:
+On macOS/Linux: Use cron (and ask gpt)
+for windows:
+i don't care

@@ -1,5 +1,7 @@
 # need to import the seminar class from seminar.py
 from utils.seminar_class import seminar
+from ics import Calendar, Event
+from datetime import datetime, timedelta
 
 #region url
 # collect url and locator from all websites
@@ -11,14 +13,22 @@ BAMS_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAa
 BQSE_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617"
 
 
-# each seminar has a url, name, path, scrapper, location, and time, as defined in the seminar class
+# each seminar has a url, name, path, scrapper, location, time, and semester, as defined in the seminar class
 BAMS = seminar(
     url = BAMS_url,
     name = 'BAMS',
-    path = 'data/BAMS.csv',
-        self.scrapper = scraper
-        self.location = location
-        self.time = time_slot
+    scraper= 'google',
+    location  = 'Mohrenstraße 58, Ostrom room', # location just a string
+    duration = timedelta(hours=1.5)
+)
+
+BQSE = seminar(
+    url = BQSE_url,
+    name = 'BQSE',
+    scraper= 'google',
+    location  = 'Spandauer 1, Room 23', # location just a string
+    duration = timedelta(hours=1.5)
+)
 
 # Econ history:
 # table element: everything under #parent-fieldname-text > div > table

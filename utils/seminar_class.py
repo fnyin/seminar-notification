@@ -1,5 +1,8 @@
 # define a class called seminar
 # import packages needed for the class
+from ics import Calendar, Event
+from datetime import datetime, timedelta
+
 
 class seminar:
     '''
@@ -8,7 +11,7 @@ class seminar:
     approach: save a local version and then compare it with the newly scrapped data?
     '''
     
-    def __init__(self, url, name, path, scraper, location, time_slot, semester):
+    def __init__(self, url, name, scraper, location, duration, semester = None,  path = None,):
         """
         self.url = url
         self.name = name
@@ -24,8 +27,8 @@ class seminar:
         """
         self.url = url
         self.name = name
-        self.path = path
-        self.scrapper = scraper
         self.location = location
-        self.time = time_slot
+        self.duration = duration
         self.semester = semester
+        self.path = path
+        self.scraper = scraper

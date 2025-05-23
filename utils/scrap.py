@@ -29,15 +29,6 @@ def scrap_google(url):
 
     return df
 
-def compare(df1, df2):
-    # this function compares two dataframes and returns the differences
-    # it uses the pandas merge function to find the differences
-    # it returns a dataframe with the differences
-    df = pd.merge(df1, df2, how='outer', indicator=True)
-    df = df[df['_merge'] != 'both']
-    df = df.drop(columns=['_merge'])
-    
-    return df
 
 #TODO: allow selection of column rows
 
