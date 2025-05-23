@@ -30,7 +30,12 @@ folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
 
 # if we are starting a new semester, we need to create a new folder
-if not isdir(folder_path):
+if isdir(folder_path):
+    # set the new_sem parater, need it for later if statements
+    new_sem = False
+else:    
+    new_sem = True
+    
     # create a folder for the semester
     folder_path = os.path.join(folder_path, sem)
     os.makedirs(folder_path, exist_ok=True)
@@ -58,7 +63,6 @@ def set_sem(s, semester):
 for s in seminar_list:
     s = set_sem(s, '2023 Fall')
 
-
 #region main
 def main(s):
     '''
@@ -76,12 +80,30 @@ def main(s):
     # compare the two
     diff = compare(df_new, df_old)
     
+    # shorten the data
+    event_rows = simplify_data(s, diff)
     
-    # if the new data differs from the local data, save the new data to a local file
-    # save the scraped data to a local file using the name provided
-    # file_path = os.path.join(folder_path, f"{s.name}.csv")
-    # df_new.to_csv(file_path, index=False)
-    # print(f"Saved {s.name} data to {s.path}")
+    if new_sem:
+        # if we are starting a new semester, the seminar list is likely to be very long, so we only keep until our desired date
+        event_rows = event_rows[event_rows['Date'] >= start_date]
+        
+    # --- Create the calendar ---
+    calendar = Calendar()
+    for index, row in event_rows.iterrows():
+        try:
+            event = create_event(s, row)
+            calendar.events.add(event)
+            print(f"Added event: {event.name} on {event.begin}")
+        except Exception as e:
+            print(f"Error creating event for row {index}: {e}")
+    
+    # --- Save to ICS file ---
+    ics_filename = f"{s.name.lower().replace(' ', '_')}_calendar.ics"
+    with open(ics_filename, "w") as f:
+        f.writelines(calendar)
 
+    print(f"\n📅 ICS file saved as: {ics_filename}")
     
     return diff
+
+

@@ -1,7 +1,7 @@
 # need to import the seminar class from seminar.py
 from utils.seminar_class import seminar
 from ics import Calendar, Event
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
 
 #region url
 # collect url and locator from all websites
@@ -19,6 +19,7 @@ BAMS = seminar(
     name = 'BAMS',
     scraper= 'google',
     location  = 'Mohrenstraße 58, Ostrom room', # location just a string
+    begin = time(hour=14, minute=0), # time is a datetime.time object
     duration = timedelta(hours=1.5)
 )
 
@@ -27,6 +28,7 @@ BQSE = seminar(
     name = 'BQSE',
     scraper= 'google',
     location  = 'Spandauer 1, Room 23', # location just a string
+    begin = time(hour=16, minute=15),
     duration = timedelta(hours=1.5)
 )
 

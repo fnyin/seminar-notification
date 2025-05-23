@@ -2,10 +2,13 @@
 # goal is to retrieve the future seminars with date and title announced
 # approach: save a local version and then compare it with the newly scrapped data?
 
-#region set up
 import pandas as pd
 import os
+from utils.seminar_class import seminar
+from ics import Calendar, Event
+from datetime import datetime, timedelta, time
 
+#region data
 # we only need the difference between the scrapped and local data
 def compare(df1, df2):
     # this function compares two dataframes and returns the differences
@@ -17,32 +20,37 @@ def compare(df1, df2):
     
     return df
 
-# evaluate the differences and keep the rows where we have complete info
-def evaluate(df):
-    # this function evaluates the differences and keeps the rows where we have complete info
-    # it uses the pandas dropna function to drop the rows with missing values
-    # it returns a dataframe with the complete rows
-    df = df[['']]
+# simplify the data formt, keeping only what we need to create event
+def simplify_data(s, diff):
+    # keep relevant columns
+    if 'Place' not in diff.columns:
+        diff['Place'] = s.location
+    df = df[['Date', 'Place', 'Speaker', 'Institution', 'Title']]
+    
+    # filter for rows with complete information
+    complete = df.dropna(subset=['Date', 'Place', 'Speaker', 'Institution', 'Title'])
+    
+    # formate date
+    complete['Date'] = pd.to_datetime(complete['Date'], format='%d.%m.%Y')
     
     return df
 
-#region cleaning
-def clean_data(df):
-    '''
-    this function cleans the data that we scrape from the seminar websites
-    goal is to retrieve the future seminars with date and title announced
-    approach: save a local version and then compare it with the newly scrapped data?
-    '''
-    # remove empty rows
-    df = df.dropna(how='all')
+#region event
+def create_event(s, row):
+    event = Event()
     
-    # remove empty columns
-    df = df.dropna(axis=1, how='all')
-    
-    # remove duplicates
-    df = df.drop_duplicates()
-    
-    # reset index
-    df = df.reset_index(drop=True)
-    
-    return df
+    # Title
+    event.name = f"{s.name} - {row['Title']}"
+
+    # Combine date from row and time from seminar object
+    date_val = row['Date'].date() 
+    time_val = s.begin             # Should be datetime.time
+    event.begin = datetime.combine(date_val, time_val)
+
+    # Duration, location, etc.
+    event.duration = s.duration
+    event.location = s.location
+    event.description = f"Speaker: {row['Speaker']}\nInstitution: {row['Institution']}"
+    event.url = s.url
+
+    return event

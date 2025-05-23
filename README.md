@@ -6,4 +6,4 @@ no need to open this script and run it mamually, unless you need to update the s
 for mac:
 On macOS/Linux: Use cron (and ask gpt)
 for windows:
-i don't care
+powershare?
