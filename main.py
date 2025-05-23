@@ -1,7 +1,7 @@
 # main script
-#TODO: allow reset for each semester
-#TODO: perplexity API to search for speaker and return short bio, website link, and paper link
-#TODO: clean the tables (allow for varying format)
+#DONE: allow reset for each semester
+#DONE: clean the tables (allow for varying  format)
+#TODO: add econ history (static), rockwool seminar (dynamic)
 
 
 from utils.scrap import *
