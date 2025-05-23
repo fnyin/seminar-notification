@@ -9,13 +9,14 @@ from utils.seminar_class import seminar
 from utils.process import *
 from utils.info import *
 import os
+from os.path import isdir
 import pandas as pd
 from ics import Calendar, Event
 
 #region inputs
 project_root = '/Users/fan/Dropbox/projects/programming/scrap-seminar'
-new_sem = True # only call set to True once before the semester starts
 sem = "2025SoSe" # set the semester to the current semester
+start_date = datetime(2025, 5, 24) # set the start date to the earlist date you want to trace back the seminar invites. only matters for init
 seminar_list = [BAMS, BQSE] # store seminare you want to get updates from!
 
 
@@ -28,13 +29,11 @@ os.chdir(project_root)
 folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
 
-# create a folder for the semester
-folder_path = os.path.join(folder_path, sem)
-os.makedirs(folder_path, exist_ok=True)
-
-
-# if we are in a new semester, we need to create a new folder
-if new_sem:
+# if we are starting a new semester, we need to create a new folder
+if not isdir(folder_path):
+    # create a folder for the semester
+    folder_path = os.path.join(folder_path, sem)
+    os.makedirs(folder_path, exist_ok=True)
     
     # enumerate through the seminar list and scrap each seminar
     for s in seminar_list:
@@ -76,7 +75,6 @@ def main(s):
     
     # compare the two
     diff = compare(df_new, df_old)
-    
     
     
     # if the new data differs from the local data, save the new data to a local file
