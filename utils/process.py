@@ -7,10 +7,12 @@ import os
 from utils.seminar_class import seminar
 from ics import Calendar, Event
 from datetime import datetime, timedelta, time
+import pytz
 
 #region data
 # we only need the difference between the scrapped and local data
 def compare(df1, df2):
+    # haven't used this function, now 
     # this function compares two dataframes and returns the differences
     # it uses the pandas merge function to find the differences
     # it returns a dataframe with the differences
@@ -29,7 +31,6 @@ def simplify_data(s, df):
         df['Place'] = s.location
     df = df[['Date', 'Place', 'Speaker', 'Institution', 'Title']]
     
-    print(f"Date column before conversion: {df['Date'].head()}")
     
     # formate date
     if s.name == 'BAMS':
@@ -38,7 +39,7 @@ def simplify_data(s, df):
     else:
         df['Date'] = pd.to_datetime(df['Date'], format='%d.%m.%Y', errors='coerce')
 
-    print(f"Date column after conversion: {df['Date'].head()}")
+    df['Date'] = df['Date'].dt.tz_localize('Europe/Berlin')
     
     # filter for rows with complete information
     complete = df.dropna(subset=['Date', 'Place', 'Speaker', 'Institution']) # allow missing titls for now
@@ -61,7 +62,7 @@ def create_event(s, row):
     date_val = row['Date'].date() 
     time_val = s.begin             # Should be datetime.time
     event.begin = datetime.combine(date_val, time_val)
-    event.end = event.begin + timedelta(hours=1.5)
+
 
     # Duration, location, etc.
     event.duration = s.duration
