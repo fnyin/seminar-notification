@@ -1,0 +1,148 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Lukas Makovsky\nInstitution: U Reading
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250620T141500Z
+SUMMARY:BQSE - TBC
+UID:5a16aea6-69ff-4a48-9e84-c0ed424cc858@5a16.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Canishk Naik\nInstitution: London School of Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250526T120000Z
+SUMMARY:BAMS - Mental Health and the Targeting of Social Assistance
+UID:a9989382-1c82-4143-bdc9-01c582d2faa1@a998.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Susan Dynarski\nInstitution: Harvard University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250616T120000Z
+SUMMARY:BAMS - 
+UID:29c72961-2b54-47a5-b34b-4de1b2130f58@29c7.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Samira Barzin\nInstitution: University of Oxford
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250711T141500Z
+SUMMARY:BQSE - TBC
+UID:0201c07e-3c5c-4050-9d88-d180333415a2@0201.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Ferdinand Rauch\nInstitution: U Heidelberg
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250613T141500Z
+SUMMARY:BQSE - TBC
+UID:1c6c3ae9-c9c4-49e2-80b1-aa3d0e294f94@1c6c.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Chiara Lacava\nInstitution: University of Naples Federico II
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250704T141500Z
+SUMMARY:BQSE - TBC
+UID:aaf33281-0c4d-489b-b169-c06cd3ea660d@aaf3.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Nikita Melnikov\nInstitution: Nova School of Business and Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250707T120000Z
+SUMMARY:BAMS - 
+UID:d61dcb21-1ea7-4069-8e3e-0b902aa1fe0b@d61d.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Matti Sarvimäki\nInstitution: Aalto University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250623T120000Z
+SUMMARY:BAMS - 
+UID:6853d15f-a4f6-45de-bb6e-efa415913932@6853.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Sara Bagagli\nInstitution: LSE
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250627T141500Z
+SUMMARY:BQSE - TBC
+UID:afe20a05-d95e-4897-b004-3c5734012fce@afe2.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Sydnee Caldwell\nInstitution: UC Berkeley
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250610T120000Z
+SUMMARY:BAMS - 
+UID:1e8749fa-8c55-4bc3-be79-9d4169bae081@1e87.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Vicky Fouka\nInstitution: Stanford University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250714T120000Z
+SUMMARY:BAMS - 
+UID:fe3c260e-802a-4ee2-b78a-21bfc09d52e9@fe3c.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Rajeev Dehejia\nInstitution: New York University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250721T120000Z
+SUMMARY:BAMS - 
+UID:864c5e39-5369-4c5f-91ca-59c1b8ba451a@864c.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Amanda Ang\nInstitution: Aalto University
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250606T141500Z
+SUMMARY:BQSE - TBC
+UID:1ed41ac7-4bc3-40e2-b943-28b2c113924e@1ed4.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Simon Jäger\nInstitution: Princeton University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250630T120000Z
+SUMMARY:BAMS - 
+UID:4737ff30-9ddd-4ec6-93bf-8fb49560415d@4737.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Tom Kirchmaier\nInstitution: London School of Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250602T120000Z
+SUMMARY:BAMS - Not Incentivized Yet Efficient: Working From Home in the Public Sector
+UID:88f1b1a0-21f6-4e51-9db8-50604f568c3c@88f1.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Hans Koster\nInstitution: VU Amsterdam
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250718T141500Z
+SUMMARY:BQSE - TBC
+UID:6afd5ae0-6e95-49f7-a126-852243ae8826@6afd.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+END:VCALENDAR
