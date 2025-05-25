@@ -54,6 +54,7 @@ def simplify_data(s, df):
 #region event
 def create_event(s, row):
     event = Event()
+    berlin = pytz.timezone('Europe/Berlin')
     
     # Title
     event.name = f"{s.name} - {row['Title']}"
@@ -61,8 +62,10 @@ def create_event(s, row):
     # Combine date from row and time from seminar object
     date_val = row['Date'].date() 
     time_val = s.begin             # Should be datetime.time
-    event.begin = datetime.combine(date_val, time_val)
-
+    
+    naive_dt = datetime.combine(date_val, time_val)
+    event.begin = berlin.localize(naive_dt)
+    
 
     # Duration, location, etc.
     event.duration = s.duration

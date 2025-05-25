@@ -28,44 +28,14 @@ seminar_list = [BAMS, BQSE] # store seminare you want to get updates from!
 # Set the working directory to the project root (or any absolute path)
 os.chdir(project_root)
 
-# create the folder relative to this working directory
-folder_path = "data"
-os.makedirs(folder_path, exist_ok=True)
-
-# semester path
-semester_path = os.path.join(folder_path, sem)
-print(f"Semester path: {semester_path}")
-
 # set time zone for the starting date
 berlin = pytz.timezone('Europe/Berlin')
 start_date = berlin.localize(datetime(2025, 5, 24))
-
-# if we are starting a new semester, we need to create a new folder
-if isdir(semester_path):
-    # set the new_sem parater, need it for later if statements
-    new_sem = False
-else:    
-    new_sem = True
-    
-    # create a folder for the semester
-    os.makedirs(semester_path, exist_ok=True)
-    
-    # enumerate through the seminar list and scrap each seminar
-    for s in seminar_list:
-        # scrap the seminar website
-        df = scrap_google(s.url)
-        
-        # save the scraped data to a local file using the name provided
-        file_path = os.path.join(semester_path, f"{s.name}.csv")
-        print(file_path)
-        df.to_csv(file_path, index=False)
-        print(f"Saved {s.name} data to {s.path}")
 
 
 # update the semester for each seminar object
 for s in seminar_list:
     s.semester = sem
-    s.path = os.path.join(semester_path, f"{s.name}.csv")  # update the path to the local file
 
 #region main
 def basic(s, start):    
@@ -94,7 +64,7 @@ def create_cal(s_list, start, name):
                 print(f"Error creating event for row {index}: {e}")
         
         
-    ics_filename = f"econ_seminar_calendar_{name}.ics"
+    ics_filename = f"berlin_econ_seminar_calendar.ics"
     with open(ics_filename, "w") as f:
         f.writelines(calendar)
 
