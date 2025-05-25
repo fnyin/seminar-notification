@@ -6,6 +6,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import re
 
 def scrap_google(url):
     # this function scrapes the google sheet and returns a pandas dataframe
@@ -29,7 +30,59 @@ def scrap_google(url):
 
     return df
 
+def econ_hist(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
 
+    # Find all table rows
+    rows = soup.find_all('tr')
+
+    seminar_data = []
+
+    for row in rows:
+        cells = row.find_all('td')
+        if len(cells) >= 2:
+            date = cells[0].get_text(strip=True)
+            details = cells[1].get_text(separator="\n", strip=True)
+
+            # Split lines inside the details cell
+            lines = [line.strip() for line in details.split("\n") if line.strip()]
+            if len(lines) >= 2:
+                speaker_info = lines[0]
+                title = lines[1]
+            else:
+                speaker_info = lines[0]
+                title = ""
+
+            # Extract speaker and institution (using regex)
+            match = re.match(r"(.+?)\s*\((.+?)\)", speaker_info)
+            if match:
+                speaker = match.group(1).strip()
+                institution = match.group(2).strip()
+            else:
+                speaker = speaker_info.strip()
+                institution = ""
+
+            # Hardcode place (or scrape if available)
+            place = "Berlin"
+
+            seminar_data.append({
+                'Date': date,
+                #'Place': place,
+                'Speaker': speaker,
+                'Institution': institution,
+                'Title': title
+            })
+
+    # Convert to DataFrame
+    df = pd.DataFrame(seminar_data)
+
+    # Reorder columns
+    df = df[['Date',  'Speaker', 'Institution', 'Title']]
+    
+    return df
+
+# Show DataFrame
 #TODO: allow selection of column rows
 
 # # WIP: dynamic

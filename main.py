@@ -20,7 +20,7 @@ import subprocess
 project_root = '/Users/fan/Dropbox/projects/programming/scrap-seminar'
 sem = "2025SoSe" # set the semester to the current semester
 start_date = datetime(2025, 4, 15) # set the start date to the earlist date you want to trace back the seminar invites. only matters for init
-seminar_list = [BAMS, BQSE] # store seminare you want to get updates from!
+seminar_list = [BAMS, BQSE, EH] # store seminare you want to get updates from!
 
 
 #region set up
@@ -38,9 +38,19 @@ for s in seminar_list:
     s.semester = sem
 
 #region main
-def basic(s, start):    
-    df = scrap_google(s.url)
+def basic(s, start): 
+    if s.scraper == 'static':   
+        df = econ_hist(s.url)
+    elif s.scraper == 'google':    
+        df = scrap_google(s.url)
 
+    # save a backup csv file locally to the data folder
+    data_dir = os.path.join(project_root, 'data')
+    if not isdir(data_dir):
+        os.makedirs(data_dir)
+    csv_filename = os.path.join(data_dir, f"{s.name}_{sem}.csv")
+    df.to_csv(csv_filename, index=False)
+    
     # shorten the data
     event_rows = simplify_data(s, df)
     
