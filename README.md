@@ -2,9 +2,11 @@
 
 Welcome to the **Seminar Notification Calendar Tool**! 🎓📅
 
-This project scrapes the latest seminar listings from the university or research group website, generates a `.ics` calendar file, and hosts it on GitHub so you can **subscribe** directly to the calendar in Google Calendar, Apple Calendar, or any other calendar app that supports `.ics` subscriptions.
+This project collects the latest seminar listings from the university or research group website, generates a `.ics` calendar file, and hosts it on GitHub so you can **subscribe** directly to the calendar in Google Calendar, Apple Calendar, or any other calendar app that supports `.ics` subscriptions.
 
-Currently, it scrapes BQSE and BAMS seminar series, but expanding!
+Currently, it only contains information of BQSE and BAMS seminar series, but expanding!
+On my list: Econ History, Development
+
 Alternatively, you can use it as a template to scrape any seminar series by modifying the scraping logic. Note that you will have to add the info.py script yourself (with the URL, time ... etc).
 
 ---
