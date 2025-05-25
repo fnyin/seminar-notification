@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Vicky Fouka\nInstitution: Stanford University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250714T140000Z
+SUMMARY:BAMS - TBC
+UID:ceeee930-0aae-457f-9e94-80aa48b013a2@ceee.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Sydnee Caldwell\nInstitution: UC Berkeley
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250610T140000Z
+SUMMARY:BAMS - TBC
+UID:71528450-3cbf-4ce9-b814-d53ac2ba2f9f@7152.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Rajeev Dehejia\nInstitution: New York University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250721T140000Z
+SUMMARY:BAMS - TBC
+UID:65238f23-91ce-48cb-9854-35448a67a97f@6523.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Nikita Melnikov\nInstitution: Nova School of Business and Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250707T140000Z
+SUMMARY:BAMS - TBC
+UID:2fb9f5a3-141f-43b5-ae63-8eb0c5f37ae0@2fb9.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Matti Sarvimäki\nInstitution: Aalto University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250623T140000Z
+SUMMARY:BAMS - TBC
+UID:151378f4-0b3c-4078-a164-8cf7e71aa751@1513.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Susan Dynarski\nInstitution: Harvard University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250616T140000Z
+SUMMARY:BAMS - TBC
+UID:260a4671-a90c-4974-a969-e3d176f97ca3@260a.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Canishk Naik\nInstitution: London School of Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250526T140000Z
+SUMMARY:BAMS - Mental Health and the Targeting of Social Assistance
+UID:bf53d16a-0609-45dd-bd1a-9a85531fcae8@bf53.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Tom Kirchmaier\nInstitution: London School of Economics
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250602T140000Z
+SUMMARY:BAMS - Not Incentivized Yet Efficient: Working From Home in the Public Sector
+UID:9272ca89-1d98-43e4-954a-80cbddf5c6dd@9272.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Simon Jäger\nInstitution: Princeton University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250630T140000Z
+SUMMARY:BAMS - TBC
+UID:ffd68bd8-b7fe-477e-9feb-eb16f295d871@ffd6.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+END:VCALENDAR
