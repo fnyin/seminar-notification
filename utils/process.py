@@ -14,26 +14,41 @@ def compare(df1, df2):
     # this function compares two dataframes and returns the differences
     # it uses the pandas merge function to find the differences
     # it returns a dataframe with the differences
-    df = pd.merge(df1, df2, how='outer', indicator=True)
+    df = pd.merge(df1, df2, how='outer', on=['Date',  'Speaker', 'Institution', 'Title'], indicator=True)
+    # filter out rows that are present in both dataframes
     df = df[df['_merge'] != 'both']
+    # drop the _merge column as it is not needed anymore
     df = df.drop(columns=['_merge'])
     
     return df
 
 # simplify the data formt, keeping only what we need to create event
-def simplify_data(s, diff):
+def simplify_data(s, df):
     # keep relevant columns
-    if 'Place' not in diff.columns:
-        diff['Place'] = s.location
+    if 'Place' not in df.columns:
+        df['Place'] = s.location
     df = df[['Date', 'Place', 'Speaker', 'Institution', 'Title']]
     
-    # filter for rows with complete information
-    complete = df.dropna(subset=['Date', 'Place', 'Speaker', 'Institution', 'Title'])
+    print(f"Date column before conversion: {df['Date'].head()}")
     
     # formate date
-    complete['Date'] = pd.to_datetime(complete['Date'], format='%d.%m.%Y')
+    if s.name == 'BAMS':
+        df['Date'] = pd.to_datetime(df['Date'], format='%d.%m.%y', errors='coerce')
+
+    else:
+        df['Date'] = pd.to_datetime(df['Date'], format='%d.%m.%Y', errors='coerce')
+
+    print(f"Date column after conversion: {df['Date'].head()}")
     
-    return df
+    # filter for rows with complete information
+    complete = df.dropna(subset=['Date', 'Place', 'Speaker', 'Institution']) # allow missing titls for now
+    # if there is no title, we can set it to 'TBC' or 'No seminar'
+    complete['Title'] = complete['Title'].fillna('TBC')  # fill missing titles with TBC
+    #complete = complete[complete['Title'] !=  'TBC']
+    complete = complete[complete['Title'] !=  'No seminar'] # specific for bqse
+    
+    print(f"Number of complete rows for {s.name}: {len(complete)}")
+    return complete
 
 #region event
 def create_event(s, row):
@@ -46,10 +61,19 @@ def create_event(s, row):
     date_val = row['Date'].date() 
     time_val = s.begin             # Should be datetime.time
     event.begin = datetime.combine(date_val, time_val)
+    event.end = event.begin + timedelta(hours=1.5)
 
     # Duration, location, etc.
     event.duration = s.duration
     event.location = s.location
+    
+    # update the location is not 'DIW'
+    ## only applicable for applied micro
+    if event.location == 'DIW':
+        event.location = s.location
+    else:
+        event.location = row['Place']
+        
     event.description = f"Speaker: {row['Speaker']}\nInstitution: {row['Institution']}"
     event.url = s.url
 

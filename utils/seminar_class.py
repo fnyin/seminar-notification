@@ -11,7 +11,7 @@ class seminar:
     approach: save a local version and then compare it with the newly scrapped data?
     '''
     
-    def __init__(self, url, name, scraper, location, duration, semester = None,  path = None, time = None):
+    def __init__(self, url, name, scraper, location, duration, semester = None,  path = None, begin = None):
         """
         self.url = url
         self.name = name
@@ -32,4 +32,4 @@ class seminar:
         self.semester = semester
         self.path = path
         self.scraper = scraper
-        self.time = time
+        self.begin = begin

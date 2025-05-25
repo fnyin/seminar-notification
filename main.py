@@ -29,16 +29,19 @@ os.chdir(project_root)
 folder_path = "data"
 os.makedirs(folder_path, exist_ok=True)
 
+# semester path
+semester_path = os.path.join(folder_path, sem)
+print(f"Semester path: {semester_path}")
+
 # if we are starting a new semester, we need to create a new folder
-if isdir(folder_path):
+if isdir(semester_path):
     # set the new_sem parater, need it for later if statements
     new_sem = False
 else:    
     new_sem = True
     
     # create a folder for the semester
-    folder_path = os.path.join(folder_path, sem)
-    os.makedirs(folder_path, exist_ok=True)
+    os.makedirs(semester_path, exist_ok=True)
     
     # enumerate through the seminar list and scrap each seminar
     for s in seminar_list:
@@ -46,25 +49,19 @@ else:
         df = scrap_google(s.url)
         
         # save the scraped data to a local file using the name provided
-        file_path = os.path.join(folder_path, f"{s.name}.csv")
+        file_path = os.path.join(semester_path, f"{s.name}.csv")
+        print(file_path)
         df.to_csv(file_path, index=False)
         print(f"Saved {s.name} data to {s.path}")
 
-# update semester for each seminar
-def set_sem(s, semester):
-    '''
-    this function updates the semester of the seminar object
-    '''
-    s.semester = semester
-    
-    return s
 
 # update the semester for each seminar object
 for s in seminar_list:
-    s = set_sem(s, '2023 Fall')
+    s.semester = sem
+    s.path = os.path.join(semester_path, f"{s.name}.csv")  # update the path to the local file
 
 #region main
-def main(s):
+def basic(s):
     '''
     s for class seminar
     this function calls the scrap_google function to scrape the seminar websites,
@@ -73,23 +70,24 @@ def main(s):
     if we have complete information, send a calendar invite to myself (user)
     '''
     # get both new and old data
-    df_new = scrap_google(s.url)
+    #df_new = scrap_google(s.url)
     
-    df_old = pd.read_csv(s.path)
+    df = pd.read_csv(s.path)
     
     # compare the two
-    diff = compare(df_new, df_old)
+    #diff = compare(df_new, df_old)
     
     # shorten the data
-    event_rows = simplify_data(s, diff)
+    event_rows = simplify_data(s, df)
     
-    if new_sem:
-        # if we are starting a new semester, the seminar list is likely to be very long, so we only keep until our desired date
-        event_rows = event_rows[event_rows['Date'] >= start_date]
+    # filter for rows for events later than the start date
+    event_rows = event_rows[event_rows['Date'] >= start_date]
+
         
     # --- Create the calendar ---
     calendar = Calendar()
     for index, row in event_rows.iterrows():
+       # print(f"Number of rows to process: {len(event_rows)}")
         try:
             event = create_event(s, row)
             calendar.events.add(event)
@@ -104,6 +102,9 @@ def main(s):
 
     print(f"\n📅 ICS file saved as: {ics_filename}")
     
-    return diff
+    return None
 
-
+for index, s in enumerate(seminar_list):
+    
+        calendar = basic(s)
+    
