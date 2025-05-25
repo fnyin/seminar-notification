@@ -49,7 +49,7 @@ def basic(s, start):
 
     return event_rows
 
-def create_cal(s_list, start, name):
+def create_cal(s_list, start):
     calendar = Calendar()
     for s in s_list:
         event_rows = basic(s, start)
@@ -73,4 +73,4 @@ def create_cal(s_list, start, name):
     return None
     
 
-create_cal(seminar_list, start_date, sem)
+create_cal(seminar_list, start_date)
