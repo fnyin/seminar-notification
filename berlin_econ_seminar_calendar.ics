@@ -2,139 +2,13 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Speaker: Sydnee Caldwell\nInstitution: UC Berkeley
+DESCRIPTION:Speaker: Nikita Melnikov\nInstitution: Nova School of Business and Economics
 DURATION:PT1H30M
 LOCATION:DIW
-DTSTART:20250610T120000Z
+DTSTART:20250707T120000Z
 SUMMARY:BAMS - 
-UID:b22212b3-7075-4dc5-b403-92260f608251@b222.org
+UID:51d909b3-ccf8-4829-9a9e-2fafdc76bafd@51d9.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Vicky Fouka\nInstitution: Stanford University
-DURATION:PT1H30M
-LOCATION:DIW
-DTSTART:20250714T120000Z
-SUMMARY:BAMS - 
-UID:dd0976c0-46f9-40a2-81a2-dae037ce5842@dd09.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Chiara Lacava\nInstitution: University of Naples Federico II
-DURATION:PT1H30M
-LOCATION:Spandauer 1\, Room 23
-DTSTART:20250704T141500Z
-SUMMARY:BQSE - TBC
-UID:92da0c72-70f3-42fd-b7b2-6fca2fc9eee2@92da.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: SANDRINE KOTT\nInstitution: UNIVERSITY OF GENEVA
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250625T150000Z
-SUMMARY:Econ History - A World More Equal. An internationalist Perspective on the Cold War
-UID:8e9de84b-dcfa-4ef9-b22b-be45473c0601@8e9d.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Susan Dynarski\nInstitution: Harvard University
-DURATION:PT1H30M
-LOCATION:DIW
-DTSTART:20250616T120000Z
-SUMMARY:BAMS - 
-UID:c4822753-6a63-4b8d-adf6-c80e9e904bc6@c482.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Droysen Lecture\nInstitution: Tuesday\, 18:00 Einstein-Saal\, BBAW
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250527T150000Z
-SUMMARY:Econ History - LYNDAL ROPER (UNIVERSITY OF OXFORD)
-UID:56bd782f-7e6f-47f3-b232-db27d1722ef3@56bd.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Lukas Makovsky\nInstitution: U Reading
-DURATION:PT1H30M
-LOCATION:Spandauer 1\, Room 23
-DTSTART:20250620T141500Z
-SUMMARY:BQSE - TBC
-UID:ddb0462b-0ab0-4b74-b94d-fb8fca90908a@ddb0.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Samira Barzin\nInstitution: University of Oxford
-DURATION:PT1H30M
-LOCATION:Spandauer 1\, Room 23
-DTSTART:20250711T141500Z
-SUMMARY:BQSE - TBC
-UID:1e801bba-d160-4f78-a94a-b0522a722450@1e80.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Rajeev Dehejia\nInstitution: New York University
-DURATION:PT1H30M
-LOCATION:DIW
-DTSTART:20250721T120000Z
-SUMMARY:BAMS - 
-UID:c0a60edd-f1c2-41fb-bdff-185f41e1f389@c0a6.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Amanda Ang\nInstitution: Aalto University
-DURATION:PT1H30M
-LOCATION:Spandauer 1\, Room 23
-DTSTART:20250606T141500Z
-SUMMARY:BQSE - Population growth and wildfire mitigation
-UID:e0fa7fca-cf58-4614-ba46-88769de1db45@e0fa.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: FRANCESCO CINNIRELLA\nInstitution: UNIVERSITY OF BERGAMO
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250702T150000Z
-SUMMARY:Econ History - Books Go Public: The Consequences of the Expropriation of Monastic Libraries on Innovation
-UID:4315691d-6b7a-4e46-8f5d-d141103a4bed@4315.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: AGNES ARNDT\nInstitution: TU DRESDEN
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250716T150000Z
-SUMMARY:Econ History - Child Welfare and Child Endangerment. A History of the Political Economy of Care in Post-War Germany
-UID:71e05959-5dc3-4a8a-acb5-b405e0bec3cd@71e0.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Tom Kirchmaier\nInstitution: London School of Economics
-DURATION:PT1H30M
-LOCATION:DIW
-DTSTART:20250602T120000Z
-SUMMARY:BAMS - Not Incentivized Yet Efficient: Working From Home in the Public Sector
-UID:9eb58f27-3d86-4780-974a-f571827d03c1@9eb5.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Matti Sarvimäki\nInstitution: Aalto University
-DURATION:PT1H30M
-LOCATION:DIW
-DTSTART:20250623T120000Z
-SUMMARY:BAMS - 
-UID:20494f72-77b2-4747-ada3-6c73df07959a@2049.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: Ferdinand Rauch\nInstitution: U Heidelberg
-DURATION:PT1H30M
-LOCATION:Spandauer 1\, Room 23
-DTSTART:20250613T141500Z
-SUMMARY:BQSE - TBC
-UID:786f545c-159b-4541-91d2-d27375e23301@786f.org
-URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Speaker: Simon Jäger\nInstitution: Princeton University
@@ -142,44 +16,44 @@ DURATION:PT1H30M
 LOCATION:DIW
 DTSTART:20250630T120000Z
 SUMMARY:BAMS - 
-UID:f8fc8a3a-d821-4feb-b6b9-f51a02eec781@f8fc.org
+UID:35ad12a3-b17e-46f6-823c-8d894a5e2f3c@35ad.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Speaker: Nikita Melnikov\nInstitution: Nova School of Business and Economics
+DESCRIPTION:Speaker: SANDRINE KOTT\nInstitution: UNIVERSITY OF GENEVA
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250625T150000Z
+SUMMARY:Econ History - A World More Equal. An internationalist Perspective on the Cold War
+UID:d716f296-4fb8-4f88-81fd-fb30529cb9cc@d716.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Ferdinand Rauch\nInstitution: U Heidelberg
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250613T141500Z
+SUMMARY:BQSE - TBC
+UID:2bee9a10-fdff-4fd1-bd0b-4d91c73f1a2e@2bee.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Chiara Lacava\nInstitution: University of Naples Federico II
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250704T141500Z
+SUMMARY:BQSE - TBC
+UID:d11ada83-a642-428e-8f2f-d86d9d64bcd0@d11a.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Tom Kirchmaier\nInstitution: London School of Economics
 DURATION:PT1H30M
 LOCATION:DIW
-DTSTART:20250707T120000Z
-SUMMARY:BAMS - 
-UID:e9bbc803-98d7-4c30-b678-6402f47eee5c@e9bb.org
+DTSTART:20250602T120000Z
+SUMMARY:BAMS - Not Incentivized Yet Efficient: Working From Home in the Public Sector
+UID:60235488-dc88-4abd-9feb-f7efd76b41d3@6023.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: PETER KRAMPER\nInstitution: UNIVERSITY OF BIELEFELD
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250709T150000Z
-SUMMARY:Econ History - Tenement blocks\, home ownership and "Mietenwahnsinn". Reflections on the history of the housing question (1850-today)
-UID:db778805-88cc-496b-b1fd-2d429a4f3b85@db77.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: MONA MORGAN COLLINS\nInstitution: KING’S COLLEGE LONDON
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250611T150000Z
-SUMMARY:Econ History - Suffrage\, Turnout and the Household: How Marriage Mobilized Newly Enfranchised Wives and their Husbands in Urban Sweden
-UID:84975c28-dc0f-4b8f-b7f3-47f5d6d74819@8497.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Speaker: MATTHIAS WEIGAND\nInstitution: HARVARD UNIVERSITY
-DURATION:PT1H15M
-LOCATION:Unter den Linden 6 (main building)\, room 2095A
-DTSTART:20250604T150000Z
-SUMMARY:Econ History - Crisis\, State Capacity\, and the Making of Autocracy: A Design-based Analysis of the Thirty Years' War
-UID:93c26583-b82f-4052-8126-633c794491dd@93c2.org
-URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Speaker: Hans Koster\nInstitution: VU Amsterdam
@@ -187,7 +61,7 @@ DURATION:PT1H30M
 LOCATION:Spandauer 1\, Room 23
 DTSTART:20250718T141500Z
 SUMMARY:BQSE - TBC
-UID:ab27457f-4f23-4399-86de-c1f963aee64d@ab27.org
+UID:e7b3696c-4dd8-432c-a6ca-314941df4c31@e7b3.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
 END:VEVENT
 BEGIN:VEVENT
@@ -196,8 +70,17 @@ DURATION:PT1H30M
 LOCATION:Spandauer 1\, Room 23
 DTSTART:20250627T141500Z
 SUMMARY:BQSE - TBC
-UID:75faa491-03b0-4b0f-8e41-836e8ca6077f@75fa.org
+UID:5c1b77bd-e1b1-4cea-811b-20e3c6251262@5c1b.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Rajeev Dehejia\nInstitution: New York University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250721T120000Z
+SUMMARY:BAMS - 
+UID:a9e9d59a-f9a9-41a2-990b-e3c5d2c79a27@a9e9.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Speaker: TOM RASTER\nInstitution: LONDON SCHOOL OF ECONOMICS AND POLITICAL SCIENCE
@@ -205,7 +88,7 @@ DURATION:PT1H15M
 LOCATION:Unter den Linden 6 (main building)\, room 2095A
 DTSTART:20250618T150000Z
 SUMMARY:Econ History - Breaking the Ice: The Persistent Effects of Pioneers on Trade Relationships
-UID:84860c86-57e8-4da7-a81a-1cb38572f9a8@8486.org
+UID:5d410c31-3d24-419b-97a1-de061bdb58bd@5d41.org
 URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
 END:VEVENT
 BEGIN:VEVENT
@@ -214,7 +97,124 @@ DURATION:PT1H30M
 LOCATION:DIW
 DTSTART:20250526T120000Z
 SUMMARY:BAMS - Mental Health and the Targeting of Social Assistance
-UID:04fd317c-f823-4b7e-b322-222fef6f135c@04fd.org
+UID:91123956-c195-42f4-9891-bead3459693c@9112.org
 URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: MONA MORGAN COLLINS\nInstitution: KING’S COLLEGE LONDON
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250611T150000Z
+SUMMARY:Econ History - Suffrage\, Turnout and the Household: How Marriage Mobilized Newly Enfranchised Wives and their Husbands in Urban Sweden
+UID:b2dd66ed-9262-4fd9-8cfb-ddeed9edd3f4@b2dd.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Susan Dynarski\nInstitution: Harvard University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250616T120000Z
+SUMMARY:BAMS - 
+UID:169380eb-4bc3-4fa6-91e8-c0170c608a3e@1693.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Sydnee Caldwell\nInstitution: UC Berkeley
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250610T120000Z
+SUMMARY:BAMS - Why Workers Stay: Pay\, Beliefs\, and Attachment
+UID:7df670d2-c2e4-44fd-853e-9bafddff2b9c@7df6.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: FRANCESCO CINNIRELLA\nInstitution: UNIVERSITY OF BERGAMO
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250702T150000Z
+SUMMARY:Econ History - Books Go Public: The Consequences of the Expropriation of Monastic Libraries on Innovation
+UID:96f9bed1-95a7-4630-a47d-66ab5e3c4159@96f9.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: PETER KRAMPER\nInstitution: UNIVERSITY OF BIELEFELD
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250709T150000Z
+SUMMARY:Econ History - Tenement blocks\, home ownership and "Mietenwahnsinn". Reflections on the history of the housing question (1850-today)
+UID:a43c8428-fdc7-42b9-9346-9252fd7d7ea9@a43c.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: MATTHIAS WEIGAND\nInstitution: HARVARD UNIVERSITY
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250604T150000Z
+SUMMARY:Econ History - Crisis\, State Capacity\, and the Making of Autocracy: A Design-based Analysis of the Thirty Years' War
+UID:e8518b73-058f-4913-878d-678a0790bbe5@e851.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Vicky Fouka\nInstitution: Stanford University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250714T120000Z
+SUMMARY:BAMS - 
+UID:6e4e0fb7-337a-4cf4-adee-9abf8f1fa649@6e4e.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Lukas Makovsky\nInstitution: U Reading
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250620T141500Z
+SUMMARY:BQSE - TBC
+UID:caee7f15-e57d-4505-9b1a-2258e734724d@caee.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Matti Sarvimäki\nInstitution: Aalto University
+DURATION:PT1H30M
+LOCATION:DIW
+DTSTART:20250623T120000Z
+SUMMARY:BAMS - 
+UID:a246b57a-f1e3-440e-9a79-31f2f2a8ccef@a246.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vRshH4QuzsOR3f9RtwAaC8yfk-WYiSynZ4FXMdy07UJcl1mRxDIAc26r8Pafydld1dQqNENo7rc93v0/pubhtml?gid=1189407793
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Johanna Arlinghaus\nInstitution: Hertie School
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250711T141500Z
+SUMMARY:BQSE - TBC
+UID:9d1d4b81-e1b1-4da2-97c4-e43e7b304388@9d1d.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Amanda Ang\nInstitution: Aalto University
+DURATION:PT1H30M
+LOCATION:Spandauer 1\, Room 23
+DTSTART:20250606T141500Z
+SUMMARY:BQSE - Population growth and wildfire mitigation
+UID:676a2b68-2dcb-41ad-b6cf-944ab8f3bcab@676a.org
+URL:https://docs.google.com/spreadsheets/d/e/2PACX-1vR3J_S9rJVlljcVhC1IcG1IY-TkSl75PQAu8jZX9nnfZMx3Jceddn2wOa5WfE-hP5jpbwU_YbpY40Dx/pubhtml?gid=572234617
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: AGNES ARNDT\nInstitution: TU DRESDEN
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250716T150000Z
+SUMMARY:Econ History - Child Welfare and Child Endangerment. A History of the Political Economy of Care in Post-War Germany
+UID:7b27d82e-4967-4d31-a2b3-2bc3fe464189@7b27.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Speaker: Droysen Lecture\nInstitution: Tuesday\, 18:00 Einstein-Saal\, BBAW
+DURATION:PT1H15M
+LOCATION:Unter den Linden 6 (main building)\, room 2095A
+DTSTART:20250527T150000Z
+SUMMARY:Econ History - LYNDAL ROPER (UNIVERSITY OF OXFORD)
+UID:956eda7d-eed6-4b7f-95b6-75afa537ca83@956e.org
+URL:https://www.geschichte.hu-berlin.de/en/bereiche-und-lehrstuehle-en/sozial-wirtschaftsgeschichte-en/colloquium
 END:VEVENT
 END:VCALENDAR
