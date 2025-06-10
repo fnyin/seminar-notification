@@ -2,6 +2,9 @@
 
 Welcome to the **Seminar Notification Calendar Tool**! 🎓📅
 
+TL:DR:
+subscribe to this URL: https://raw.githubusercontent.com/fnyin/berlin-seminar-cal/main/berlin_econ_seminar_calendar.ics
+
 This project collects the latest seminar listings from the university or research group website, generates a `.ics` calendar file, and hosts it on GitHub so you can **subscribe** directly to the calendar in Google Calendar, Apple Calendar, or any other calendar app that supports `.ics` subscriptions.
 
 Currently, it only contains information of BQSE and BAMS seminar series, but expanding!
