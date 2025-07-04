@@ -13,7 +13,6 @@ from os.path import isdir
 import pandas as pd
 from ics import Calendar, Event
 import pytz
-import subprocess
 
 
 #region inputs
